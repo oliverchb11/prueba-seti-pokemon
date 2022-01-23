@@ -2,7 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
 
-## Development server
+## despliegue y ejecución del proyecto POKEMON
+
+Despues de tener el link del repositorio hacer el git clone
+
+Acceder a la carpeta que se genera del git clone del proyecto
+
+Para ejecutar este proyecto se debe de ejectura en la consola del proyecto el comado: npm i
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
