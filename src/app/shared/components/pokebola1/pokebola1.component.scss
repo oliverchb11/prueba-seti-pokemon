@@ -1,0 +1,70 @@
+.pokebola1 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/51/Pokebola-pokeball-png-0.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* Center the image */
+    height: 150px;
+    width: 150px;
+    position: fixed;
+    animation-name: identifier;
+    animation-duration: 0.5s;
+    top: 80%;
+    left: 1%;
+    /* You must set a specified height */
+    cursor: pointer;
+}
+
+.pokebola1-abierta {
+    background-image: url(https://cdn.pixabay.com/photo/2019/11/18/15/46/pokemon-4635112_640.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 208px;
+    width: 163px;
+    position: fixed;
+    top: 72%;
+    left: 1%;
+    cursor: pointer;
+}
+
+@keyframes identifier {
+    0% {
+        left: -2%;
+        opacity: 0.2;
+    }
+    30% {
+        left: -1%;
+        opacity: 0.4;
+    }
+    68%,
+    72% {
+        left: 0%;
+        opacity: 0.6;
+    }
+    100% {
+        left: 1%;
+        opacity: 1;
+    }
+}
+
+::ng-deep .mat-snack-bar-container {
+    margin: 134px !important;
+    background-color: #2e2e89;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .pokebola1 {
+        height: 79px;
+        width: 79px;
+    }
+    .pokebola1-abierta {
+        height: 80px;
+        width: 62px;
+        top: 76%;
+    }
+     ::ng-deep .mat-snack-bar-container {
+        margin: 0px !important;
+    }
+}

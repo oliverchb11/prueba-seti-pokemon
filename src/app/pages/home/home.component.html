@@ -1,0 +1,24 @@
+<div class="container main">
+    <div class="row">
+        <div class="col-md-6 col-xl-3 col-lg-4 col-sm-12 col-xs-12  mt-5 mb-3" *ngFor="let pokemon of pokemones">
+            <div class="card " style="width: 18rem;">
+                <img (click)="verPokemon(pokemon)" src="assets/pokemon/{{pokemon.id}}.png" class="card-img-top card-pokemon" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title card-pokemon" (click)="verPokemon(pokemon)">{{pokemon.name}}</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-center">{{pokemon.types.length === 1 ? 'Type' : 'Types'}}</li>
+                    <li class="list-group-item" *ngFor="let type of pokemon.types">{{type.type.name}}</li>
+                </ul>
+                <div class="card-body">
+                    <a class="card-link card-pokemon" (click)="verPokemon(pokemon)">Ver mas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<app-pokebola1 [closePokebolas]="isClosePokebola1"></app-pokebola1>
+<app-pokebola2 (closePokebola1)="closePokebolaE1($event)"></app-pokebola2>

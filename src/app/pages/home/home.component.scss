@@ -1,0 +1,20 @@
+.main {
+    height: auto;
+}
+
+.card-pokemon {
+    cursor: pointer;
+}
+
+ ::ng-deep .mat-dialog-container {
+    width: 70% !important;
+    height: 50% !important;
+    margin: 0 auto !important;
+}
+
+@media screen and (max-width: 768px) {
+     ::ng-deep .mat-dialog-container {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}

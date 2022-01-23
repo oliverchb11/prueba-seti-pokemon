@@ -1,0 +1,73 @@
+.content-data {
+    display: flex;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    cursor: pointer;
+    left: 95%;
+    /* font-size: 28px; */
+    transform: translate(-35%);
+}
+
+.data {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px
+}
+
+.pokemon1-data {
+    width: 100%
+}
+
+.pokemon1-data img {
+    height: 300px;
+    width: 300px;
+}
+
+.pokemon2-data img {
+    height: 300px;
+    width: 300px;
+}
+
+.pokemon2-data {
+    width: 100%
+}
+
+.vs {
+    font-size: 50px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 50px auto;
+    flex-direction: column;
+}
+
+::ng-deep .mat-dialog-container {
+    box-shadow: 4px 4px 4px #ccc;
+}
+
+@media screen and (max-width: 768px) {
+    .data {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 154px;
+    }
+    .pokemon1-data img {
+        background-position: center;
+        height: 200px;
+        width: 200px;
+    }
+    .pokemon2-data img {
+        background-position: center;
+        height: 200px;
+        width: 200px;
+    }
+}
